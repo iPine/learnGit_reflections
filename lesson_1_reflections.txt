@@ -1,0 +1,45 @@
+﻿How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+查看文件的两个版本之间的差异如何帮助你了解引入的错误？
+
+命令：
+    - Windows: FC fileA fileB
+    - Mac/Linux: diff -u fileA fileB
+通过给出的不同版本的差异来对比，查找错误，更省时。
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+从长远来看，能轻松访问文件的整个历史记录将如何提高编程者的效率？
+
+    可帮助程序员了解前一段时间的编码工作。提醒程序员某个版本的代码作了哪些修改。
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    自动保存缺点是会将一些无意义的更改保存，优点是避免忘记手动保存而丢失更改。手动保存能更灵活控制保存时间点，避免无意义的更改被保留，缺点是如果忘记保存，会丢失更改。
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    因为项目里的某些文件间联系紧密，一个文件的修改会影响另一个文件。例如：CSS文件定义的样式将引用HTML文件中的元素。所以两个文件都有可能出现更改，这就需要版本控制系统能够一次提交多个文件。但也有一些文件是独立的，例如修改一张照片，并不会影响其他文件，所以会有一些系统单独对待每个文件。
+
+How can you use the commands git log and git diff to view the history of files?
+
+    在要查看历史的文件下，首先使用
+    - git log 命令，查看共有多少commits提交了，找到要查看改动的commit ID；再使用
+    - git diff commitID preCommitID命令，查看这个commit有多少行作了改动。
+
+How might using version control make you more confident to make changes that
+could break something?
+使用版本控制，如何让你更有信心进行有可能会造成破坏的更改？
+
+    即使发生错误，也可以回到未发生bug的版本，使用命令
+    - git checkout 最新commitID
+    - git log
+    查找出是哪一次的commit导致了bug，然后再次使用'git checkout 最新的无bug的commitID' 回到无bug的版本。也可以继续排除是什么代码导致bug，然后修复该bug。
+
+Now that you have your workspace set up, what do you want to try using Git for?
+现在你已设置了工作空间，你想尝试使用 Git 来做些什么？
+   
+   可以做版本控制的练习了！
