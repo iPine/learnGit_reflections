@@ -20,6 +20,8 @@ organized? How would branches help?
 
 
 How do the diagrams help you visualize the branch structure?
+图表如何帮助你直观显示分支结构？
+通过图表可以直观看到从哪个commit开始出现分支，有几个分支，分支在什么时候合并。
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
