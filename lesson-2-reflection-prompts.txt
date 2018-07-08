@@ -25,6 +25,8 @@ How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+将两个分支合并到一起有何结果？为什么我们在图表中表示它的方式是那样的？
+合并两个分支后，主分支会实现被合并分支的效果，git log可以看到到合并分支为止的所有的提交
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
