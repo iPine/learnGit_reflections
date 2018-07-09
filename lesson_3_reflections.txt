@@ -14,3 +14,7 @@ Fork是指再github上的类似于clone的操作，能显示某个仓库被fork�
 当产生协作冲突时，可以利用本地副本来解决冲突。
 - git fetch origin
 - git merge master origin/master
+
+
+如何在不使用 Git 或 GitHub 的情况下开展协同？哪种做法更容易？哪种做法更困难？
+不使用Git或者github的情况下协同工作，每个成员copy一份最开始的代码，然后各自完成复杂的功能代码，然后需要定期手动合并和更新代码。使用 Git 或 GitHub 的情况更为容易。
