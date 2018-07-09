@@ -8,3 +8,9 @@
 
 说明Fork、克隆和分支之间的不同。何时使用某种功能而不是另一种？
 Fork是指再github上的类似于clone的操作，能显示某个仓库被fork了多少次。Clone是指从远程克隆仓库到计算机本地或者在计算机本地从一个地方克隆到另一个地方。Branch是多人协作或者需要实现一些实验性features时使用的策略。
+
+
+拥有远程分支的上次已知状态的副本（存储在本地）有何好处？
+当产生协作冲突时，可以利用本地副本来解决冲突。
+- git fetch origin
+- git merge master origin/master
